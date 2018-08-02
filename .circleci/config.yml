@@ -2,7 +2,6 @@ version: 2
 
 defaults:
   golang_container: &golang_container
-    working_directory: *workspace_root
     docker:
       - image: circleci/golang:1-stretch
 
@@ -43,11 +42,10 @@ workflows:
 
   push:
     jobs:
-      - deploy-qa
+      - deploy-qa:
+          filters: *default_filters
 
       - deploy-prod:
-          requires:
-            - checkout
           filters:
             <<: *default_filters
             branches:
