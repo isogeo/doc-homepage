@@ -1,0 +1,77 @@
+version: 2
+
+defaults:
+  workspace_root: &workspace_root
+    ~/isogeo-help
+
+  golang_container: &golang_container
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/golang:1-stretch
+
+  filters: &default_filters
+    tags:
+      only: '/v[0-9]+(\.[0-9]+)*/'
+
+  attach_workspace: &attach_workspace
+    attach_workspace:
+      at: *workspace_root
+
+jobs:
+  checkout:
+    steps:
+      - checkout
+
+      - persist_to_workspace:
+          root: *workspace_root
+          paths:
+            - ./
+
+  deploy-qa:
+    <<: *golang_container
+    steps:
+      - *attach_workspace
+
+      - run:
+          name: Install rclone
+          command: go get github.com/ncw/rclone
+
+      - deploy:
+          name: Upload to Azure Blob Storage
+          command: rclone sync index.html qa:\$web --delete-after
+
+  deploy-prod:
+    <<: *golang_container
+    steps:
+      - *attach_workspace
+
+      - run:
+          name: Install rclone
+          command: go get github.com/ncw/rclone
+
+      - deploy:
+          name: Upload to Azure Blob Storage
+          command: rclone sync index.html prod:\$web
+
+
+workflows:
+  version: 2
+
+  push:
+    jobs:
+      - checkout:
+          filters: *default_filters
+
+      - deploy-qa:
+          requires:
+            - checkout
+          requires:
+            - build
+
+      - deploy-prod:
+          requires:
+            - checkout
+          filters:
+            <<: *default_filters
+            branches:
+              ignore: /.*/
