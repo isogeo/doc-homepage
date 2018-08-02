@@ -65,8 +65,6 @@ workflows:
       - deploy-qa:
           requires:
             - checkout
-          requires:
-            - build
 
       - deploy-prod:
           requires:
