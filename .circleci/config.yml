@@ -1,9 +1,6 @@
 version: 2
 
 defaults:
-  workspace_root: &workspace_root
-    ~/isogeo-help
-
   golang_container: &golang_container
     working_directory: *workspace_root
     docker:
@@ -13,24 +10,11 @@ defaults:
     tags:
       only: '/v[0-9]+(\.[0-9]+)*/'
 
-  attach_workspace: &attach_workspace
-    attach_workspace:
-      at: *workspace_root
-
 jobs:
-  checkout:
-    steps:
-      - checkout
-
-      - persist_to_workspace:
-          root: *workspace_root
-          paths:
-            - ./
-
   deploy-qa:
     <<: *golang_container
     steps:
-      - *attach_workspace
+      - checkout
 
       - run:
           name: Install rclone
@@ -43,7 +27,7 @@ jobs:
   deploy-prod:
     <<: *golang_container
     steps:
-      - *attach_workspace
+      - checkout
 
       - run:
           name: Install rclone
@@ -59,12 +43,7 @@ workflows:
 
   push:
     jobs:
-      - checkout:
-          filters: *default_filters
-
-      - deploy-qa:
-          requires:
-            - checkout
+      - deploy-qa
 
       - deploy-prod:
           requires:
