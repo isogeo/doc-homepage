@@ -34,8 +34,9 @@ jobs:
 
       - deploy:
           name: Upload to Azure Blob Storage
-          command: rclone sync index.html prod:\$web
-
+          command: |
+                rclone sync index.html prod:\$web
+                rclone copy favicon.ico prod:\$web
 
 workflows:
   version: 2
