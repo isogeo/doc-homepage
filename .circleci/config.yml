@@ -21,7 +21,9 @@ jobs:
 
       - deploy:
           name: Upload to Azure Blob Storage
-          command: rclone sync index.html qa:\$web --delete-after
+          command: |
+                rclone sync index.html qa:\$web --delete-after
+                rclone copy favicon.ico prod:\$web
 
   deploy-prod:
     <<: *golang_container
