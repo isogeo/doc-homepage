@@ -23,7 +23,7 @@ jobs:
           name: Upload to Azure Blob Storage
           command: |
                 rclone sync index.html qa:\$web --delete-after
-                rclone copy favicon.ico qa:\$web
+                rclone sync favicon.png qa:\$web
 
   deploy-prod:
     <<: *golang_container
@@ -38,7 +38,7 @@ jobs:
           name: Upload to Azure Blob Storage
           command: |
                 rclone sync index.html prod:\$web
-                rclone copy favicon.ico prod:\$web
+                rclone sync favicon.png prod:\$web
 
 workflows:
   version: 2
