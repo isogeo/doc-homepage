@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Isogeo, documentation 404">
+    <meta name="author" content="Isogeo">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Isogeo Documentation - 404</title>
+  </head>
+
+  <body>
+    <h2>Isogeo documentation - 404</h2>
+    <p id="info">Redirection...</p>
+    <!-- Javascript -->
+    <script>
+      var url_base = window.location;
+      console.log(!url_base.search.includes("?redir"));
+      if ((url_base.host.includes("help.qa.isogeo.com") || url_base.host.includes("help.isogeo.com")) && !url_base.search.includes("?redir")) {
+        var new_url = "http://" + url_base.host + "/admin" + url_base.pathname + url_base.hash + "?redir";
+        window.location.replace(new_url);
+      } else {
+        window.location.replace("http://" + url_base.host);
+      }
+    </script>
+  </body>
+</html>
