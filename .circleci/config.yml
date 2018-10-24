@@ -16,6 +16,10 @@ jobs:
       - checkout
 
       - run:
+          name: Rename robots.txt
+          command: mv robots_qa.txt robots.txt
+
+      - run:
           name: Install rclone
           command: go get github.com/ncw/rclone
 
@@ -25,11 +29,16 @@ jobs:
                 rclone sync index.html qa:\$web --delete-after
                 rclone sync 404.html qa:\$web --delete-after
                 rclone sync favicon.png qa:\$web --delete-after
+                rclone sync robots.txt qa:\$web --delete-after
 
   deploy-prod:
     <<: *golang_container
     steps:
       - checkout
+
+      - run:
+          name: Rename robots.txt
+          command: mv robots_prod.txt robots.txt
 
       - run:
           name: Install rclone
@@ -41,6 +50,7 @@ jobs:
                 rclone sync index.html prod:\$web --delete-after
                 rclone sync 404.html prod:\$web --delete-after
                 rclone sync favicon.png prod:\$web --delete-after
+                rclone sync robots.txt qa:\$web --delete-after
 
 workflows:
   version: 2
