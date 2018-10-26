@@ -1,27 +1,48 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Isogeo, documentation 404">
-    <meta name="author" content="Isogeo">
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Isogeo Documentation - 404</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Isogeo, documentation 404">
+  <meta name="author" content="Isogeo">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <title>Isogeo Documentation - 404</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
     <h2>Isogeo documentation - 404</h2>
-    <p id="info">Redirection...</p>
-    <!-- Javascript -->
-    <script>
-      var url_base = window.location;
-      console.log(!url_base.search.includes("?redir"));
-      if ((url_base.host.includes("help.qa.isogeo.com") || url_base.host.includes("help.isogeo.com")) && !url_base.search.includes("?redir")) {
-        var new_url = "http://" + url_base.host + "/admin" + url_base.pathname + url_base.hash + "?redir";
-        window.location.replace(new_url);
-      } else {
-        window.location.replace("http://" + url_base.host);
-      }
-    </script>
-  </body>
+    <div class="alert alert-info">
+      <p id="info">
+        Cette page s'est déplacée dans l'hyperespace... Redirection en cours vers... <span id="newUrl"></span>
+        <br>Préparez-vous pour le saut !
+      </p>
+    </div>
+  </div>
+  <!-- Javascript -->
+  <script>
+    var url_base = window.location;
+    console.log(!url_base.search.includes("?redir"), url_base);
+    if ((url_base.host.includes("help.qa.isogeo.com") || url_base.host.includes("help.isogeo.com")) && !url_base.search.includes("?redir") && !url_base.pathname.includes("admin//")) {
+      var new_url = "http://" + url_base.host + "/admin" + url_base.pathname + url_base.hash + "?redir";
+      console.log("Redirected to:", new_url);
+      document.getElementById(newUrl).textContent = new_url;
+      window.location.replace(new_url);
+    } else if (url_base.pathname.includes("admin//")) {
+      console.log("wrong pathname:", url_base.pathname);
+      new_pathname = url_base.pathname.replace("//", "/");
+      var new_url = "http://" + url_base.host + url_base.pathname.replace("//", "/");
+      console.log("Redirected to:", new_url);
+      document.getElementById("newUrl").innerHTML = new_url;
+      window.location.replace(new_url);
+    } else {
+      window.location.replace("http://" + url_base.host);
+    }
+  </script>
+</body>
+
 </html>
