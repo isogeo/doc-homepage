@@ -30,7 +30,7 @@
     if ((url_base.host.includes("help.qa.isogeo.com") || url_base.host.includes("help.isogeo.com")) && !url_base.search.includes("?redir") && !url_base.pathname.includes("admin//")) {
       var new_url = "http://" + url_base.host + "/admin" + url_base.pathname + url_base.hash + "?redir";
       console.log("Redirected to:", new_url);
-      document.getElementById(newUrl).textContent = new_url;
+      document.getElementById("newUrl").innerHTML = new_url;
       window.location.replace(new_url);
     } else if (url_base.pathname.includes("admin//")) {
       console.log("wrong pathname:", url_base.pathname);
@@ -40,6 +40,7 @@
       document.getElementById("newUrl").innerHTML = new_url;
       window.location.replace(new_url);
     } else {
+      document.getElementById("newUrl").innerHTML = "http://" + url_base.host;
       window.location.replace("http://" + url_base.host);
     }
   </script>
