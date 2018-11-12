@@ -52,6 +52,7 @@ jobs:
                 rclone sync favicon.png prod:\$web --delete-after
                 rclone sync robots.txt prod:\$web --delete-after
                 rclone sync sitemap.xml prod:\$web --delete-after
+                rclone sync sitemapindex.xml prod:\$web --delete-after
 
 workflows:
   version: 2
