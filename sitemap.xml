@@ -34,7 +34,7 @@
             <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/isogeo2office/fr/index.html" />
       </url>
       <url>
-            <loc>http://help.isogeo.com/extractor/fr/index.html</loc>
+            <loc>http://help.isogeo.com/extractor/index.html</loc>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
             <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/extractor/fr/index.html" />
