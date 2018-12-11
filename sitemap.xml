@@ -1,60 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-      xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" 
-      xmlns:xhtml="http://www.w3.org/1999/xhtml" 
-      xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" 
-      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <url>
-            <loc>http://help.isogeo.com/</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-      </url>
-      <url>
-            <loc>http://help.isogeo.com/admin/fr/index.html</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
-            <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/admin/fr/index.html" />
-      </url>
-      <url>
-            <loc>http://help.isogeo.com/qgis/fr/index.html</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-            <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/qgis/fr/index.html" />
-      </url>
-      <url>
-            <loc>http://help.isogeo.com/arcmap/fr/index.html</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-            <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/arcmap/fr/index.html" />
-      </url>
-      <url>
-            <loc>http://help.isogeo.com/isogeo2office/fr/index.html</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-            <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/isogeo2office/fr/index.html" />
-      </url>
-      <url>
-            <loc>http://help.isogeo.com/extractor/index.html</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-            <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/extractor/fr/index.html" />
-      </url>
-      <url>
-            <loc>http://help.isogeo.com/arcgis-webapp/fr/index.html</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-            <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/arcgis-webapp/fr/index.html" />
-      </url>
-      <url>
-            <loc>http://help.isogeo.com/pixup-portal/index.html</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-            <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/pixup-portal/index.html" />
-      </url>
-      <url>
-            <loc>http://help.isogeo.com/api/fr/index.html</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.6</priority>
-            <xhtml:link rel="alternate" hreflang="fr-fr" href="http://help.isogeo.com/api/fr/index.html" />
-      </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://help.isogeo.com/</loc>
+        <lastmod>2018-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://help.isogeo.com/admin/fr/index.html</loc>
+        <lastmod>2018-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://help.isogeo.com/qgis/fr/index.html</loc>
+        <lastmod>2018-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://help.isogeo.com/arcmap/fr/index.html</loc>
+        <lastmod>2018-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://help.isogeo.com/isogeo2office/fr/index.html</loc>
+        <lastmod>2018-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://help.isogeo.com/extractor/index.html</loc>
+        <lastmod>2018-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://help.isogeo.com/arcgis-webapp/fr/index.html</loc>
+        <lastmod>2018-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://help.isogeo.com/pixup-portal/index.html</loc>
+        <lastmod>2018-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://help.isogeo.com/api/fr/index.html</loc>
+        <lastmod>2018-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
