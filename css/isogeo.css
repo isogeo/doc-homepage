@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color:#5b5b5b;
+	font-size:15px;
+}
+
+.logo{
+	position:absolute;
+	top:0;
+	left:10;
+	max-width: 25px;
+}
+
+a{
+	color:#5b5b5b;
+}
+
+a:hover{
+	color:#5b5b5b;
+	text-decoration:none;
+}
+
+.top{
+	font-family: 'Montserrat', sans-serif;
+	height:46px;
+	color:#fff;
+	background-color:#325b94;
+}
+
+.top div{
+	text-align:center;
+	padding-top:15px;
+	font-size:12px;
+	font-weight:500;
+}
+
+.top div a{
+	color:#fff;
+}
+
+.card{
+	border-color:#c8c8c8;
+	border-radius: 0rem;
+	min-height:170px!important;
+	margin-bottom:30px;
+}
+
+.card:hover{
+	background-color:#f6f6f6;
+}
+
+.card-body p{
+	width:65%;
+}
+
+.appli-bureautique{
+	border-left:7px solid #5ab19d;
+}
+
+.plateforme{
+	border-left:7px solid #e7903b;
+}
+
+.appli-web{
+	border-left:7px solid #56c4f8;
+}
+
+.developpeur{
+	border-left:7px solid #d22e18;
+}
+
+h1,h2,h3{
+	font-family: 'Montserrat', sans-serif;
+	color:#325b94;
+}
+
+h1{
+	text-align:center;
+	padding:40px 0 40px 0;
+}
+
+h3{
+	font-size:24px;
+}
+
+h5{
+	font-size:15px;
+}
+
+.highlight{
+	color:#e7903b;
+}
+
+.icoAppAdmin{
+	background:url("../img/ico-interface-administration.svg") no-repeat right 10px top 10px;
+	background-size: 85px 77px;
+}
+
+.icoPugin{
+	background:url("../img/ico-plugin.svg") no-repeat right 10px top 10px;
+	background-size: 85px 77px;
+}
+
+.icoIsogeo2Office{
+	background:url("../img/ico-isogeo2office.svg") no-repeat right 15px top 10px;
+	background-size: 80px 72px;
+}
+
+.icoGeoportail{
+	background:url("../img/ico-geoportail.svg") no-repeat right 8px top 10px;
+	background-size: 100px 55px;
+}
+
+.icoApi{
+	background:url("../img/ico-api.svg") no-repeat right 15px top 8px;
+	background-size: 55px 84px;
+}
+
+.icoApiSdkPython{
+	background:url("../img/ico-api-sdk-python.svg") no-repeat right 15px top 8px;
+	background-size: 82px 73px;
+}
+
+.icoExtracteur{
+	background:url("../img/ico-extracteur.svg") no-repeat right 10px top 8px;
+	background-size: 95px 61px;
+}
+
+@media (max-width: 1200px) {
+	h3{
+		font-size:21px;
+	}
+}
+
+@media (max-width: 995px) {
+	h3{
+		font-size:24px;
+	}
+	.card{
+		min-height:0px!important;
+	}
+	
+}

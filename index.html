@@ -1,179 +1,163 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Isogeo, hub des documentations en ligne">
-    <meta name="keywords" content="Isogeo,catalogage,INSPIRE,aide,help,documentation,manuel,support">
-    <meta name="author" content="Isogeo">
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="alternate" href="http://help.isogeo.com" hreflang="fr-fr" />
-    <title>Isogeo - Documentation</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-  crossorigin="anonymous">
+	<head>
+		<!-- META -->
+		<meta charset="utf-8">
+		<title>Isogeo - Documentation</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Isogeo, hub des documentations en ligne">
+		<meta name="keywords" content="Isogeo, métadonnée, SIG, catalogage, INSPIRE, aide, help, documentation, manuel, support">
+		<meta name="author" content="Isogeo">
+		<link rel="alternate" href="http://help.isogeo.com" hreflang="fr-fr" />
+		<!-- STYLES -->
+		    <!-- Bootstrap core CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/isogeo.css">
+    	<link rel="icon" type="image/png" href="favicon.png" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+    	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22345848-2"></script>
+    	<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'UA-22345848-2');
+    	</script>
+	</head>
+	<body>
+		<div class="logo"><img src="img/ico-isogeo.png"></div>
+		<div class="row top">
+			<div class="col-sm-4"><a href="https://www.isogeo.com?utm_source=help" target="_blank" >Site</a></div>
+			<div class="col-sm-4"><a href="https://www.isogeo.com/blog-et-actus?utm_source=help" target="_blank" >Blog</a></div>
+			<div class="col-sm-4"><a href="https://app.isogeo.com?utm_source=help" target="_blank" >APP</a></div>
+		</div>
 
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22345848-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+		<div class="container">
+			
+			<h1>Base de connaissance sur les produits <span class="highlight">Isogeo</span></h1>
 
-      gtag('config', 'UA-22345848-2');
-    </script>
-  </head>
+			<div class="row">
+				
+				<div class="col-sm-12 col-md-12 col-lg-6 ">
+					<div class="card plateforme">
+						<a href="admin/fr/index.html">
+							<div class="card-body icoAppAdmin">
+								<h5>Plateforme</h5>
+								<h3 class="card-title">Interface d'administration</h3>
+								<p class="card-text">Guide d'utilisation d'APP, à destination des administrateurs et des éditeurs</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			
+				<div class="col-sm-12 col-md-12 col-lg-6 ">
+					<div class="card appli-bureautique">
+						<a href="qgis/fr/index.html">
+							<div class="card-body icoPugin">
+								<h5>Application tierce : bureautique</h5>
+								<h3 class="card-title">Plugin pour QGIS</h3>
+								<p class="card-text">Installation et utilisation du plugin Isogeo pour QGIS Desktop</p>
+							</div>
+						</a>
+					</div>
+				</div>
 
-  <body>
-    <div class="container">
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-          <a class="p-2 text-muted" href="https://www.isogeo.com" target="_blank">Site</a>
-          <a class="p-2 text-muted" href="https://www.isogeo.com/blog-et-actus" target="_blank">Blog</a>
-          <a class="p-2 text-muted" href="https://app.isogeo.com" target="_blank">APP</a>
-        </nav>
-      </div>
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Base de connaissance sur les produits Isogeo</h1>
-        </div>
-      </section>
-      <div class="row mb-2">
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-primary">Plateforme</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="admin/fr/index.html">Interface d&apos;administration</a>
-              </h3>
-              <p class="card-text mb-auto">Guide d&apos;utilisation d'APP, à destination des administrateurs et des éditeurs.</p>
-              <a href="admin/fr/index.html">Consulter</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" height="100" src="https://www.isogeo.com/images/isogeo/logo-isogeo.png" alt="Isogeo logo">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-success">Application tierce bureautique</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="qgis/fr/index.html">Plugin pour QGIS</a>
-              </h3>
-              <p class="card-text mb-auto">Installation et utilisation du plugin Isogeo pour QGIS Desktop.</p>
-              <a href="qgis/fr/index.html">Consulter</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" height="100" src="https://raw.githubusercontent.com/isogeo/isogeo-plugin-qgis/master/img/logo_complet_IsoQGIS.png" alt="Isogeo for QGIS - logo">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-success">Application tierce bureautique</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="arcmap/fr/index.html">Plugin pour ArcMap</a>
-              </h3>
-              <p class="card-text mb-auto">Installation et utilisation du plugin Isogeo pour ArcMap.</p>
-              <a href="arcmap/fr/index.html">Consulter</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" height="100" src="https://isogeo.gitbooks.io/app-plugin-arcmap/content/assets/logo_isogeo_arcmap.png"
-              alt="Isogeo for ArcMap - logo">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-info">Application web tierce</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="arcgis-webapp/fr/index.html">Widget pour Web AppBuilder</a>
-              </h3>
-              <p class="card-text mb-auto">Configuration  et utilisation du widget Isogeo pour les applications web d'ArcGIS.</p>
-              <a href="arcgis-webapp/fr/index.html">Consulter</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" height="100" src="https://www.esri.com/content/dam/esrisites/common/icons/product-logos/WebAppBuilder.png"
-              alt="Web AppBuilder for ArcGIS - logo">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-success">Application tierce bureautique</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="isogeo2office/fr/index.html">Isogeo to Office</a>
-              </h3>
-              <p class="card-text mb-auto">Utilisation de la boîte à outils d'export des métadonnées en formats bureautiques.</p>
-              <a href="isogeo2office/fr/index.html">Consulter</a>
-            </div>
-            <p>
-              <i class="fas fa-4x fa-cloud-download-alt"  style="color: #6480A7 ;"></i>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-success">Application tierce bureautique</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="extractor/index.html">Extracteur de données</a>
-              </h3>
-              <p class="card-text mb-auto">Configuration et utilisation de l'extracteur de données basé sur FME et dopé à l'API Isogeo.</p>
-              <a href="extractor/index.html">Consulter</a>
-            </div>
-            <p>
-              <i class="fas fa-4x fa-cogs" style="color: #6480A7 ;"></i>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-info">Application web tierce</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="pixup-portal/index.html">Portail</a>
-              </h3>
-              <p class="card-text mb-auto">Administration du portail de données conçu par Isogeo et réalisé par Pixup.</p>
-              <a href="pixup-portal/index.html">Consulter</a>
-            </div>
-            <p>
-              <i class="fas fa-4x fa-map" style="color: #6480A7 ;"></i>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-warning">Développeur</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="api/fr/index.html">API</a>
-              </h3>
-              <p class="card-text mb-auto">Documentation technique de l'API publique (en lecture).</p>
-              <a href="api/fr/index.html">Consulter</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" height="100" src="https://isogeo.gitbooks.io/api/content/assets/api_rest_isogeo_logo.jpg" alt="Isogeo REST API - logo">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-warning">Développeur</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="http://isogeo-api-pysdk.readthedocs.io/" target="_blank">API - SDK Python</a>
-              </h3>
-              <p class="card-text mb-auto">Package Python pour utiliser facilement l'API publique.</p>
-              <a href="http://isogeo-api-pysdk.readthedocs.io/" target="_blank">Consulter <i class="fas fa-external-link-alt fa-xs"></i></a>
-            </div>
-            <p>
-              <i class="fas fa-4x fa-code" style="color: #6480A7 ;"></i>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- Dependencies loaded by scripts -->
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/solid.js" integrity="sha384-GJiigN/ef2B3HMj0haY+eMmG4EIIrhWgGJ2Rv0IaWnNdWdbWPr1sRLkGz7xfjOFw"
-    crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/fontawesome.js" integrity="sha384-2OfHGv4zQZxcNK+oL8TR9pA+ADXtUODqGpIRy1zOgioC4X3+2vbOAp5Qv7uHM4Z8"
-    crossorigin="anonymous"></script>
-  </body>
+			</div>
+
+			<div class="row">
+				
+				<div class="col-sm-12 col-md-12 col-lg-6 ">					
+					<div class="card appli-bureautique">
+						<a href="arcmap/fr/index.html">
+							<div class="card-body icoPugin">
+								<h5>Application tierce : bureautique</h5>
+								<h3 class="card-title">Plugin pour ArcMap</h3>
+								<p class="card-text">Installation et utilisation du plugin Isogeo pour ArcMap</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			
+				<div class="col-sm-12 col-md-12 col-lg-6 ">
+					<div class="card appli-web">
+						<a href="arcgis-webapp/fr/index.html">
+							<div class="card-body icoPugin">
+								<h5>Application tierce : web</h5>
+								<h3 class="card-title">Widget pour Web App Builder</h3>
+								<p class="card-text">Configuration et utilisation du widget Isogeo pour les applications web d'ArcGIS</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-6 ">
+					<div class="card appli-bureautique">
+						<a href="isogeo2office/fr/index.html">
+							<div class="card-body icoIsogeo2Office">
+								<h5>Application tierce : bureautique</h5>
+								<h3 class="card-title">Isogeo to Office</h3>
+								<p class="card-text">Utilisation de la boîte à outils d’export des métadonnées en formats bureautiques</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			
+				<div class="col-sm-12 col-md-12 col-lg-6 ">
+					<div class="card appli-bureautique">
+						<a href="extractor/index.html">
+							<div class="card-body icoExtracteur">
+								<h5>Application tierce : bureautique</h5>
+								<h3 class="card-title">Extracteur de données</h3>
+								<p class="card-text">Configuration et utilisation de l'extracteur de données basé sur FME et dopé à l'API Isogeo</p>
+							</div>
+						</A>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-6 ">
+					<div class="card appli-web">
+						<a href="pixup-portal/index.html">
+							<div class="card-body icoGeoportail">
+								<h5>Application tierce : web</h5>
+								<h3 class="card-title">GéoPortail</h3>
+								<p class="card-text">Administration du portail de données conçu par Isogeo et réalisé par Pixup</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			
+				<div class="col-sm-12 col-md-12 col-lg-6 ">
+					<div class="card developpeur">
+						<a href="api/fr/index.html">
+							<div class="card-body icoApi">
+								<h5>Développeur</h5>
+								<h3 class="card-title">API</h3>
+								<p class="card-text">Documentation technique de l'API publique (en lecture)</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-6 ">
+					<div class="card developpeur">
+						<a href="https://isogeo-api-pysdk.readthedocs.io" target="_blank" >
+							<div class="card-body icoApiSdkPython">
+								<h5>Développeur</h5>
+								<h3 class="card-title">API - SDK Python</h3>
+								<p class="card-text">Package Python pour utiliser facilement l'API publique</p>
+							</div>
+						</a>
+					</div>
+				</div>			
+
+			</div>
+		</div>
+	</body>
 </html>

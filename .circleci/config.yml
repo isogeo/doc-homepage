@@ -30,6 +30,8 @@ jobs:
                 rclone sync 404.html qa:\$web --delete-after
                 rclone sync favicon.png qa:\$web --delete-after
                 rclone sync robots.txt qa:\$web --delete-after
+                rclone sync css/ qa:\$web/css --delete-after
+                rclone sync img/ qa:\$web/img --delete-after
 
   deploy-prod:
     <<: *golang_container
