@@ -55,8 +55,8 @@ jobs:
                 rclone sync robots.txt prod:\$web --delete-after
                 rclone sync sitemap.xml prod:\$web --delete-after
                 rclone sync sitemapindex.xml prod:\$web --delete-after
-                rclone sync css/ qa:\$web/css --delete-after
-                rclone sync img/ qa:\$web/img --delete-after
+                rclone sync css/ prod:\$web/css --delete-after
+                rclone sync img/ prod:\$web/img --delete-after
 
 workflows:
   version: 2
