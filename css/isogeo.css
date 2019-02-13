@@ -88,6 +88,10 @@ h1{
 
 h3{
 	font-size:24px;
+	max-width:80%;
+	height:58px;
+	margin-bottom:0px!important;
+	overflow:hidden;
 }
 
 h5{
