@@ -36,4 +36,8 @@
         <loc>http://help.isogeo.com/manager/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
+    <sitemap>
+        <loc>http://help.isogeo.com/scan/sitemap.xml</loc>
+        <lastmod>2019-03-15</lastmod>
+    </sitemap>
 </sitemapindex>
