@@ -102,26 +102,7 @@ h5{
 	color:#e7903b;
 }
 
-.icoAppAdmin{
-	background:url("../img/ico-interface-administration.svg") no-repeat right 10px top 10px;
-	background-size: 85px 77px;
-}
-
-.icoPlugin{
-	background:url("../img/ico-plugin.svg") no-repeat right 10px top 10px;
-	background-size: 85px 77px;
-}
-
-.icoIsogeo2Office{
-	background:url("../img/ico-isogeo2office.svg") no-repeat right 15px top 10px;
-	background-size: 80px 72px;
-}
-
-.icoGeoportail{
-	background:url("../img/ico-geoportail.svg") no-repeat right 8px top 10px;
-	background-size: 100px 55px;
-}
-
+/* icons */
 .icoApi{
 	background:url("../img/ico-api.svg") no-repeat right 15px top 8px;
 	background-size: 55px 84px;
@@ -132,10 +113,37 @@ h5{
 	background-size: 82px 73px;
 }
 
+.icoAppAdmin{
+	background:url("../img/ico-interface-administration.svg") no-repeat right 10px top 10px;
+	background-size: 85px 77px;
+}
+
 .icoExtracteur{
 	background:url("../img/ico-extracteur.svg") no-repeat right 10px top 8px;
 	background-size: 95px 61px;
 }
+
+.icoGeoportail{
+	background:url("../img/ico-geoportail.svg") no-repeat right 8px top 10px;
+	background-size: 100px 55px;
+}
+
+.icoIsogeo2Office{
+	background:url("../img/ico-isogeo2office.svg") no-repeat right 15px top 10px;
+	background-size: 80px 72px;
+}
+
+
+.icoPlugin{
+	background:url("../img/ico-plugin.svg") no-repeat right 10px top 10px;
+	background-size: 85px 77px;
+}
+
+.icoScan{
+	background:url("../img/ico-scan.svg") no-repeat right 10px top 10px;
+	background-size: 92px 89px;
+}
+
 
 @media (max-width: 1200px) {
 	h3{
