@@ -77,7 +77,7 @@ jobs:
   - powershell: |
       Rename-Item -Path "robots_prod.txt" -NewName "robots.txt"
       Remove-Item -Path "robots_qa.txt"
-    workingDirectory: '$(System.DefaultWorkingDirectory)/book_to_upload'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
     displayName: 'Rename robots.txt file for PROD'
 
   - task: GitHubRelease@1
@@ -88,7 +88,7 @@ jobs:
       action: 'create'
       target: '$(Build.SourceVersion)'
       tagSource: 'gitTag'
-      assets: '$(Build.ArtifactStagingDirectory)/book_to_upload/*'
+      assets: '$(Build.ArtifactStagingDirectory)/*'
       changeLogCompareToRelease: 'lastFullRelease'
       changeLogType: 'issueBased'
 
