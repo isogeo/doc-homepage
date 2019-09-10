@@ -21,8 +21,23 @@ jobs:
   displayName: "Publish to the QA"
   pool:
     vmImage: "windows-2019"
-  
+
+
   steps:
+
+  - task: DeleteFiles@1
+    displayName: 'Remove files to be ignored in publication'
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
+      Contents: |
+        .git*
+        .gitignore
+        .gitmodules
+        .vscode*
+        azure-pipelines.yml
+        package.json
+        yarn.lock
+
   - powershell: |
       Rename-Item -Path "robots_qa.txt" -NewName "robots.txt"
       Remove-Item -Path "robots_prod.txt"
