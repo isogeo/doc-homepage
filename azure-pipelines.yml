@@ -17,7 +17,7 @@ pr:
 - master
 
 jobs:
-- job: 'Build'
+- job: 'PushToQA'
   displayName: "Publish to the QA"
   pool:
     vmImage: "windows-2019"
@@ -44,10 +44,48 @@ jobs:
     displayName: 'Rename robots.txt file for QA'
 
   - task: AzureFileCopy@3
-    displayName: 'Copy files to Azure Storage Blob: qaisogeohelp/$web/$(project_name_clean)'
+    displayName: 'Copy files to Azure Storage Blob: qaisogeohelp/$web/'
     inputs:
       SourcePath: '$(System.DefaultWorkingDirectory)'
       azureSubscription: 'Isogeo - MPN(82885610-5841-4749-8d71-46f56b643ad2)'
       Destination: 'AzureBlob'
       storage: 'qaisogeohelp'
       ContainerName: '$web'
+
+- job: 'PushToPROD'
+  displayName: "Publish to the QA"
+  pool:
+    vmImage: "windows-2019"
+  condition:
+    contains(variables['Build.SourceBranch'], 'tags')
+
+  steps:
+
+  - task: DeleteFiles@1
+    displayName: 'Remove files to be ignored in publication'
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)'
+      Contents: |
+        .git*
+        .gitignore
+        .gitmodules
+        .vscode*
+        azure-pipelines.yml
+        package.json
+        yarn.lock
+
+  - powershell: |
+      Rename-Item -Path "robots_prod.txt" -NewName "robots.txt"
+      Remove-Item -Path "robots_qa.txt"
+    workingDirectory: '$(System.DefaultWorkingDirectory)/book_to_upload'
+    displayName: 'Rename robots.txt file for PROD'
+
+  - task: AzureFileCopy@3
+    displayName: 'Copy files to Azure Storage Blob: prodisogeohelp/$web/'
+    inputs:
+      SourcePath: '$(System.DefaultWorkingDirectory)'
+      azureSubscription: 'Isogeo - MPN(82885610-5841-4749-8d71-46f56b643ad2)'
+      Destination: 'AzureBlob'
+      storage: 'prodisogeohelp'
+      ContainerName: '$web'
+
