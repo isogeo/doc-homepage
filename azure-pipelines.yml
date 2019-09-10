@@ -18,16 +18,11 @@ pr:
 
 jobs:
 - job: 'Build'
-  displayName: "Build the documentation website"
+  displayName: "Publish to the QA"
   pool:
-    vmImage: "ubuntu-latest"
+    vmImage: "windows-2019"
   
   steps:
-  - task: NodeTool@0 
-    inputs:
-      versionSpec: '10.15.x'
-    displayName: 'Install Node.js 10.15.x'
-
   - powershell: |
       Rename-Item -Path "robots_qa.txt" -NewName "robots.txt"
       Remove-Item -Path "robots_prod.txt"
