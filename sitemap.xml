@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://help.isogeo.com/</loc>
+        <loc>https://help.isogeo.com/</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/admin/fr/index.html</loc>
+        <loc>https://help.isogeo.com/admin/fr/index.html</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/qgis/fr/index.html</loc>
+        <loc>https://help.isogeo.com/qgis/fr/index.html</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/arcmap/fr/index.html</loc>
+        <loc>https://help.isogeo.com/arcmap/fr/index.html</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/isogeo2office/fr/index.html</loc>
+        <loc>https://help.isogeo.com/isogeo2office/fr/index.html</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/extractor/index.html</loc>
+        <loc>https://help.isogeo.com/extractor/index.html</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/arcgis-webapp/fr/index.html</loc>
+        <loc>https://help.isogeo.com/arcgis-webapp/fr/index.html</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/pixup-portal/index.html</loc>
+        <loc>https://help.isogeo.com/pixup-portal/index.html</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/api/fr/index.html</loc>
+        <loc>https://help.isogeo.com/api/fr/index.html</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/manager/fr/index.html</loc>
+        <loc>https://help.isogeo.com/manager/fr/index.html</loc>
         <lastmod>2019-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>http://help.isogeo.com/scan/fr/index.html</loc>
+        <loc>https://help.isogeo.com/scan/fr/index.html</loc>
         <lastmod>2019-04-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.2</priority>

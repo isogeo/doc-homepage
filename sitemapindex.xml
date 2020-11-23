@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap>
-        <loc>http://help.isogeo.com/admin/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/admin/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://help.isogeo.com/qgis/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/qgis/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://help.isogeo.com/arcmap/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/arcmap/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://help.isogeo.com/isogeo2office/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/isogeo2office/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://help.isogeo.com/extractor/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/extractor/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://help.isogeo.com/arcgis-webapp/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/arcgis-webapp/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://help.isogeo.com/pixup-portal/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/pixup-portal/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://help.isogeo.com/api/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/api/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://help.isogeo.com/manager/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/manager/sitemap.xml</loc>
         <lastmod>2019-03-15</lastmod>
     </sitemap>
     <sitemap>
-        <loc>http://help.isogeo.com/scan/sitemap.xml</loc>
+        <loc>https://help.isogeo.com/scan/sitemap.xml</loc>
         <lastmod>2019-04-30</lastmod>
     </sitemap>
 </sitemapindex>
